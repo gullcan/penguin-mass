@@ -2,6 +2,8 @@
 
 Palmer Penguins veri setindeki tür ve üç vücut ölçümünden bir penguenin vücut kütlesini gram cinsinden tahmin eden eğitim projesi. Amaç yalnızca bir model çalıştırmak değil; ham veriden tahmine kadar her kararın nedenini ve sonucunu görünür kılmak.
 
+**Canlı uygulama:** [Penguen vücut kütlesi tahmini](https://penguin-mass-gclhx8xd3usgjyotmk4u6n.streamlit.app/)
+
 ![Penguen vücut kütlesi tahmin uygulaması](assets/app_screenshot.png)
 
 ## Veri ve problem
@@ -30,6 +32,7 @@ Python 3.14 ile proje kökünde sanal ortam oluşturun:
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe .\src\train.py
+.\.venv\Scripts\python.exe .\src\predict.py
 .\.venv\Scripts\python.exe -m unittest discover -s tests -p "test_*.py" -v
 .\.venv\Scripts\python.exe -m streamlit run .\app.py
 ```
